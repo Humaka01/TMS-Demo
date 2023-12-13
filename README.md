@@ -8,7 +8,7 @@ TMS is a user-friendly task management system designed for efficient task organi
 
 ## Project Details
 
-This project was developed using the Scrum framework, with Humaka as the sole team member.
+Developed following the Scrum framework, this project was led by [Humaka](https://github.com/Humaka01), with styling and design contributions by [Rash](https://github.com/Rashidh89).
 
 ## Support
 
