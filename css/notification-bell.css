@@ -1,0 +1,97 @@
+/* Updated CSS for notification bell */
+.notification-icon {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+  }
+
+#notification-bell {
+    font-size: 24px;
+    cursor: pointer;
+    color: #555;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Style for the notification dropdown */
+.notification-dropdown {
+    display: none;
+    position: absolute;
+    top: 13%;
+    right: 20%;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    max-height: 300px;
+    overflow-y: auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    z-index: 1;
+}
+
+/* CSS for bold and normal styles */
+.bold {
+    font-weight: bold;
+}
+
+.normal {
+    font-weight: normal;
+}
+
+.notification-badge {
+    background-color: #e74c3c;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 5px;
+    font-size: 10px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    display: none;
+}
+
+.notification-item {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.notification-item:last-child {
+    border-bottom: none;
+}
+
+.notification-item:hover {
+    background-color: #f9f9f9;
+}
+
+.notification-item.bold {
+    font-weight: bold;
+}
+
+.notification-item b {
+    font-weight: bold;
+    color: #007bff;
+}
+
+/* Apply different colors for various notification types */
+.notification-item.new {
+    background-color: #ffc107;
+}
+
+.notification-item.update {
+    background-color: #17a2b8;
+}
+
+.notification-item.comment {
+    background-color: #28a745;
+}
+
+.notification-item.attachment {
+    background-color: #007bff;
+}
+
+.notification-item.status {
+    background-color: #dc3545;
+}

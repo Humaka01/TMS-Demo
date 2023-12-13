@@ -1,0 +1,570 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+#todays_task_logo {
+    width: 300px;
+    margin-bottom: -1px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Index Page Background */
+#background-video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+/* what is for ? >>>>>>>>>>>>>>>>>>>>>>>>*/ 
+.index-titles {
+    color: #b11bbc;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Links */
+a {
+    color: #0a335f;
+    text-decoration: none;
+    display: block;
+    margin-top: 10px;
+}
+
+
+/* Index Page Styles */
+.login-container, .register-container {
+    max-width: 30%;
+    margin: 20px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    font-size: larger;
+}
+
+.login-container {
+    margin-top: 180px;
+}
+
+/* Form Styles */
+form input[type="text"],
+form input[type="email"],
+form input[type="password"] {
+    width: 95%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #cccccc;
+    border-radius: 10px;
+    font-size: 14px;
+    transition: border-color 0.7s ease;
+}
+
+
+form button[type="submit"]{
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #cccccc;
+    border-radius: 10px;
+    font-size: 14px;
+    transition: border-color 0.7s ease;
+}
+
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form input[type="password"]:focus {
+    border-color: #007bff;
+}
+
+/* Error Messages */
+.error-message {
+    color: #ff4b5c;
+    margin-top: 5px;
+    font-size: 12px;
+}
+
+/* Submit Buttons */
+form button[type="submit"] {
+    background-color: #007bff;
+    font-size: 22px;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Dashboard Styles */
+.dashboard {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#user-info {
+    background-color: #8bc1ff36;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    text-align: left;
+    position: relative;
+}
+
+#name {
+    font-weight: bold;
+}
+
+#logoutButton {
+    background-color: #ff4b5c;
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+    bottom: 10px;
+    right: 10px;
+}
+
+#logoutButton:hover {
+    background-color: #ff0000;
+}
+
+#statusSelect {
+    display: inline-block;
+    margin-left: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Style for the submit button */
+#statusSubmitButton {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+#statusSubmitButton:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Task Creation Styles */
+.task-creation {
+    background-color: #8bc1ff36;
+    padding: 25px;
+    border-radius: 10px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+/* Task Card Styles */
+.task-card {
+    background-color: #dcff8b36;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.task-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.task-card h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.task-card p {
+    color: #777;
+    margin-bottom: 8px;
+}
+
+/* Shared Form Elements Styles */
+form textarea,
+form select,
+form input[type="date"] {
+    width: 95%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 14px;
+    transition: border-color 0.3s ease;
+}
+
+form textarea:focus,
+form select:focus {
+    border-color: #007bff;
+}
+
+/* Label Style */
+form label {
+    display: block;
+    margin-bottom: 10px;
+    color: #777;
+}
+
+/* Task Status Style */
+.task-status {
+    color: #ff4b5c;
+    font-weight: bold;
+}
+
+/* Edit Button Style */
+.edit-button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.edit-button:hover {
+    background-color: #222;
+}
+
+/* Notification Styles */  /*both*/
+.notification {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 7px;
+    text-align: center;
+    background-color: #2ecc70e3;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+    animation: fadeInUp 0.5s, fadeOut 0.5s ease-in-out 4.5s;
+    display: none;
+    z-index: 1000;
+}
+
+/* Keyframes for fade in and upward movement animation */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Keyframes for fade out animation */
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+}
+
+.task-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.task-details p {
+    margin: 5px 0;
+    color: #777;
+}
+
+.details-section {
+    margin-top: 20px;
+}
+
+.action-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.action-button:hover {
+    background-color: #0056b3;
+}
+
+.back-link {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.form-container {
+    margin-top: 20px;
+}
+
+.form-container label {
+    display: block;
+    margin-bottom: 100px;
+    color: #777;
+    
+}
+
+.form-container textarea {
+    width: 40%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 18px;
+    transition: border-color 0.3s ease;
+}
+
+.form-container textarea:focus {
+    border-color: #007bff;
+}
+
+.task-due-date {
+    font-weight: bold;
+}
+
+.back-button {
+    display: inline-block;
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #27ae60;
+    transform: scale(1.05);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* File Upload Styles */
+.file-upload {
+    margin-top: 20px;
+ 
+}
+
+.upload-button {
+    display: inline-block;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.upload-button:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Task Filters Styles */
+.task-filters {
+    background-color: #e4f0ff;
+    padding: 12px 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Title Style */
+.task-filters h3 {
+    font-size: 18px;
+    margin-right: 20px;
+    color: #333;
+}
+
+/* Label Style */
+.task-filters label {
+    font-size: 14px;
+    margin-right: 10px;
+    color: #555;
+}
+
+/* Input Fields and Select Style */
+.task-filters input[type="date"],
+.task-filters select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 14px;
+    margin-right: 10px;
+    background-color: #fff;
+    color: #333;
+}
+
+/* Button Style */
+.task-filters button {
+    background-color: #777;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Button Hover Effect */
+.task-filters button:hover {
+    background-color: #555;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Adjust Button's Vertical Alignment */
+.task-filters button:focus {
+    vertical-align: middle;
+    outline: none;
+}
+
+/* Select Dropdown Styles */
+#assigneeSelect, #assigneeSelect option {
+    width: 98%;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+/* Dropdown Container Style */
+#assigneeSelect {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    color: #333;
+    appearance: none;
+    outline: none;
+    position: relative;
+}
+
+/* Dropdown Arrow Style */
+#assigneeSelect::after {
+    content: "\25BC";
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%) rotate(0deg);
+    font-size: 14px;
+    color: #777;
+}
+
+/* Selected Option Style */
+#assigneeSelect option:checked {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* Hover Effect for Dropdown Container */
+#assigneeSelect:hover {
+    border-color: #007bff;
+}
+
+/* Arrow Animation on Hover */
+#assigneeSelect:hover::after {
+    transform: translateY(-50%) rotate(180deg);
+}
+
+/* Hover Effect for Options */
+#assigneeSelect option:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.float-container {
+    overflow: hidden; /* Clear any float elements within this container */
+    height:auto;
+    border-radius: 20px;
+    text-align: left;
+  }
+  
+  .float-child1 {
+    float: left; /* Float the first child to the left */
+    width: 40%; /* Set the width as needed, in this case, 50% for equal width columns */
+    margin: 10px;
+    }
+  
+  .float-child2 {
+    float: left; /* Float the second child to the left */
+    width: 55%; /* Set the width as needed, in this case, 50% for equal width columns */
+    margin: 10px;
+    background-color: #8bc1ff36;
+    border-radius: 10px;
+    text-align: left;
+  }
+
+  /* Task Statistics Styles */
+.task-statistics {
+    padding: 20px;
+}
+
+.task-statistics h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.task-statistics p {
+    color: #000000;
+    margin-bottom: 8px;
+}

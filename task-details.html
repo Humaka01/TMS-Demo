@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Task Details</title>
+        <link rel="icon" href="/media/todays task tab.png" type="image/x-icon"></head>
+        <link rel="stylesheet" href="css/task-style.css">
+        <link href="css/notification-bell.css" type="text/css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <script defer src="js/notifications.js"></script>
+        <script defer src="js/task-details.js"></script>
+        <video id="background-video" autoplay loop muted poster="">
+            <source src="/media/Starscape_4K_Motion_Background_Loop.mp4" type="video/mp4">
+        </video>
+    </head>
+    <body>
+        <div id="notification" class="notification"></div>
+        <div class="task-details">
+            <div class="notification-icon">
+                <i class="fas fa-bell" id="notification-bell"></i>
+                <span id="notification-badge" class="notification-badge">0</span>
+            </div>
+            <div id="notification-dropdown" class="notification-dropdown">
+                <!-- Notifications will be added here dynamically -->
+            </div>
+            <img id="todays_task_logo" src="/media/todays task.png" alt="Today's task">
+                  
+                <div class="task-details-description">
+                    <h2 class="task-title"></h2>
+                    <p class="task-description"></p>
+                    <p class="task-id"></p>
+                </div>
+
+                <div class="status_select">
+                    <p class="task-status">Status:</p>
+                    <select id="statusSelect">
+                        <option value="To do">To do</option>
+                        <option value="In Progress">In Progress</option>
+                        <option value="Completed">Completed</option>
+                    </select>
+                    <button id="updateStatusButton" class="action-button">Update</button>
+                    
+                    <p class="task-due-date"></p>
+                    <p class="task-assignee-id"></p>
+                    <p class="task-last-edit-by"></p>
+                </div>
+
+            <div class="comments">
+                <h3>Comments</h3>
+                <ul class="comment-list"><!-- Comments will be displayed here --></ul>
+                <div class="form-container">
+                    <div class="comment-form">
+                        <label for="comments">Add Comment:</label>
+                        <textarea id="comments" name="comments" rows="4" placeholder="Write your comment here"></textarea><br>
+                        <button id="addCommentButton" class="action-button">Add Comment</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="updates">
+                <h3>Updates</h3>
+                <ul class="update-list"><!-- Updates will be displayed here --></ul>
+                <div class="form-container">
+                    <label for="updates">Add Update:</label>
+                    <textarea id="updates" name="updates" rows="4" placeholder="Write your update here"></textarea><br>
+                    <button id="addUpdateButton" class="action-button">Add Update</button>
+                </div>
+            </div>
+
+            <div class="attachments">
+                <h3>Attachments</h3>
+                <ul class="attachment-list"><!-- Attachments will be displayed here --></ul>
+            </div>
+
+            <div class="form-container">
+                <div class="file-upload">
+                    <label for="attachments">Add Attachment:</label>
+                    <input type="file" id="attachments" name="attachments">
+                    <button id="uploadButton" class="action-button">Upload File</button>
+                </div>
+            </div>
+
+            <div class="details-section actions">
+                <a class="back-button" href="dashboard.html">Back to Dashboard</a>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>TMS Dashboard</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="/media/todays task tab.png" type="image/x-icon"></head>
+        <link href="css/style.css" type="text/css" rel="stylesheet">
+        <link href="css/notification-bell.css" type="text/css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <script src="js/notifications.js"></script>
+        <video id="background-video" autoplay loop muted poster="">
+            <source src="/media/Earth_R1.mp4" type="video/mp4">
+        </video>
+    </head>
+    <body>
+        <div id="notification" class="notification"></div>
+        <div class="dashboard">
+            <div class="notification-icon">
+                <i class="fas fa-bell" id="notification-bell"></i>
+                <span id="notification-badge" class="notification-badge">0</span>
+            </div>
+            <div id="notification-dropdown" class="notification-dropdown">
+                <!-- Notifications will be added here dynamically -->
+            </div>
+            <img id="todays_task_logo" src="/media/todays task.png" alt="Today's task">
+            <h2>Task Management Dashboard</h2>
+            
+            <div class="float-container">
+                <div class="float-child1">
+                    <div id="user-info">
+                        <p>Welcome, <span id="name"></span>!</p>
+                        <p>User ID: <span id="id"></span></p>
+                        <p>Email: <span id="email"></span></p><br><br><br>
+                        <button id="logoutButton" onclick="logout()">Logout</button>
+                    </div>
+                </div>
+
+                <div class="float-child2">
+                    <div class="task-statistics">
+                        <h3>Task Statistics</h3>
+                        <p>Total Tasks: <span id="totalTasks"></span></p>
+                        <p>Tasks To Do: <span id="tasksToDo"></span></p>
+                        <p>Tasks In Progress: <span id="tasksInProgress"></span></p>
+                        <p>Tasks Done: <span id="tasksDone"></span></p>
+                        <p>Task Completion Percentage: <span id="completionPercentage"></span></p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="task-creation">
+                <h3>Create New Task</h3>
+                <form id="task-form" onsubmit="createTask(event)">
+                    <input type="text" name="taskTitle" placeholder="Task Title" required>
+                    <textarea name="taskDescription" placeholder="Task Description" required></textarea>
+                    <label for="dueDate">Due Date:</label>
+                    <input id="dueDate" type="date" name="dueDate" required>
+                    <select name="assignedTo" id="assigneeSelect" required></select>
+                    <button type="submit">Create Task</button>
+                </form>
+            </div>
+            <div class="task-filters">
+                <h3>Filters</h3>
+                <label for="startDateFilter">Due date range:</label>
+                <input type="date" id="startDateFilter" name="startDateFilter" placeholder="Start Date">
+                <input type="date" id="endDateFilter" name="endDateFilter" placeholder="End Date">
+                <label for="statusFilter">Status:</label>
+                <select id="statusFilter" name="statusFilter">
+                    <option value="">All</option>
+                    <option value="To do">To do</option>
+                    <option value="In Progress">In progress</option>
+                    <option value="Completed">Completed</option>
+                </select>
+                <button onclick="resetFilters()">Reset</button>
+            </div>
+            <div class="task-list">
+            <!-- Existing task cards will be dynamically generated here -->
+            </div>
+        </div>
+        <script src="js/script.js"></script>
+    </body>
+</html>
