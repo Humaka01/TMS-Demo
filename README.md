@@ -1,2 +1,19 @@
-# TMS-Demo
-A web-based demo of Task Management System
+# Task Management System (TMS)
+
+Welcome to the Task Management System (TMS)!
+
+## Overview
+
+TMS is a user-friendly task management system designed for efficient task organization and collaboration. This system is exclusively intended for ASU professors' evaluation, and unauthorized use is strictly prohibited.
+
+## Project Details
+
+This project was developed using the Scrum framework, with Humaka as the sole team member.
+
+## Support
+
+If you have any questions or encounter challenges, please feel free to reach out to the creator of this repository on GitHub for assistance.
+
+For detailed instructions on how to set up and use the Task Management System, please refer to the [User Documentation & Manual.pdf](tms-demo/Project%20Documents/User%20Documentation%20&%20Manual.pdf) located in the `tms-demo/Project Documents` directory.
+
+- Humaka
